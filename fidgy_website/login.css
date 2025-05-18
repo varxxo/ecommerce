@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(assets/Aura\ background.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+body {
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.left-section {
+    flex: 1;
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-position:top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+
+.right-section {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.185);
+}
+
+.form-box {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #8bc34a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #689f38;
+}
+
+.social-icons {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons img {
+    width: 32px;
+    cursor: pointer;
+}
+
+.form-box p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 100%;
+        height: 200px;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .form-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-box input,
+    .form-box button {
+        padding: 0.7rem;
+    }
+}
